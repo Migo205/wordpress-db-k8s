@@ -1,0 +1,10 @@
+apiVresion: v1
+kind: Service
+metadata:
+  name: mysql-svc
+spec: 
+  selector:
+    app: wodpress
+    tier: mysql
+  ports:
+    - port: 3306
